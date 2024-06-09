@@ -1,47 +1,113 @@
 /* Global Styles */
 body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Hero Section Styles */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #044241;
+}
+
+.header-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.button-container {
+  display: flex;
+  gap: 20px;
+
+  a {
+    color: #7be8eb;
+    text-decoration: none;
+
+    &:hover {
+      color: #ddd;
+    }
   }
-  
-  /* Hero Section Styles */
-  .hero-section {
-    height: 100vh; /* Full-screen height */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #044241; /* Green background color */
-  }
-  
- /* Text Styles */
+}
+
 .content {
-    text-align: center;
-    color: #ffffff; /* White text color */
+  text-align: center;
+}
+/* Text Styles */
+.content {
+  text-align: center;
+  color: #68f2eb; /* White text color */
+}
+
+h1 {
+  font-size: 2.5rem; /* Increase the font size for a comforting feel */
+}
+
+p {
+  font-size: 1.2rem; /* Adjust the font size as needed */
+}
+
+.logo-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px; /* Adjust padding as needed */
+}
+
+.logo-container img {
+  height: 100px; /* Adjust logo height as needed */
+}
+.footer-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+
+  a {
+    color: #69ded1;
+    text-decoration: none;
+
+    &:hover {
+      color: #ddd;
+    }
   }
+}
+.cta-section {
+  text-align: center;
+  padding: 20px;
   
-  h1 {
-    font-size: 2.5rem; /* Increase the font size for a comforting feel */
+  h2 {
+    color: #68a42b;
   }
-  
+
   p {
-    font-size: 1.2rem; /* Adjust the font size as needed */
+    color: #e9e1e1;
   }
-  
-  
-  .app-name {
-    color: #ffffff; /* White color for the app name */
+
+  a {
+    color: #fff;
+    background-color: #007BFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    &:hover {
+      background-color: #0056b3;
+    }
   }
-  
-  .logo-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 20px; /* Adjust padding as needed */
-  }
-  
-  .logo-container img {
-    height: 100px; /* Adjust logo height as needed */
-  }
-  
+}
